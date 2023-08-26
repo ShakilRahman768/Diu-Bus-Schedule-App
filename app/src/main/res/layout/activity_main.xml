@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Welcome to Diu Bus Schedule"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:src="@drawable/bus"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/Saturdayid"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Saturday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/Sundayid"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Sunday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/Mondayid"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Monday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/Tuesdayid"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Tuesday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/Wednesdayid"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Wednesday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/Thursdayid"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Thursday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        >
+
+        <Button
+            android:id="@+id/Fridayid"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Friday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/navigationid"
+            android:background="#6DC0EC"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/menu_navigation"
+            android:layout_gravity="bottom"
+            />
+
+</LinearLayout>
